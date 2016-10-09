@@ -26,11 +26,11 @@ before_action:find_doc, only:[:show,:edit,:update,:destroy]
 
 	end
 
-	def update
+		def update
 		if @doc.update(doc_params)
-			redirect_to @doc
-		else 
-			render 'edit'
+				redirect_to @doc
+		else
+				render 'edit'
 		end
 	end
 	
